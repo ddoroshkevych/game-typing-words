@@ -15,7 +15,7 @@ function App() {
       setIsGameRunning(false);
       setNumWords(countWords(text));
     }
-  }, [timeRemaining, isGameRunning]);
+  }, [timeRemaining, isGameRunning, text]);
 
   function changeText(event) {
     setText(event.target.value);
