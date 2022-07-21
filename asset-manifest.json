@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ddoroshkevych/ddoroshkevych.github.io/static/css/main.5ca09904.css",
+    "main.js": "/ddoroshkevych/ddoroshkevych.github.io/static/js/main.7f7af9e4.js",
+    "static/js/787.a8ccad03.chunk.js": "/ddoroshkevych/ddoroshkevych.github.io/static/js/787.a8ccad03.chunk.js",
+    "index.html": "/ddoroshkevych/ddoroshkevych.github.io/index.html",
+    "main.5ca09904.css.map": "/ddoroshkevych/ddoroshkevych.github.io/static/css/main.5ca09904.css.map",
+    "main.7f7af9e4.js.map": "/ddoroshkevych/ddoroshkevych.github.io/static/js/main.7f7af9e4.js.map",
+    "787.a8ccad03.chunk.js.map": "/ddoroshkevych/ddoroshkevych.github.io/static/js/787.a8ccad03.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ca09904.css",
+    "static/js/main.7f7af9e4.js"
+  ]
+}
