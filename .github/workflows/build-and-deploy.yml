@@ -33,11 +33,11 @@ jobs:
          npm run build --if-present
     - run: |
          echo "Commit"
+         git config user.name "Dmytro Doroshkevych" && git config user.email "ddoroshkevych@hotmail.com"
          git --work-tree build add --all
          git --work-tree build commit -m 'Deploy'
     - run: |
          echo "Config remote"
-         git config user.name "Dmytro Doroshkevych" && git config user.email "ddoroshkevych@hotmail.com"
          git remote add publish https://github.com/ddoroshkevych/ddoroshkevych.github.io.git
     - run: |
          echo "push"
