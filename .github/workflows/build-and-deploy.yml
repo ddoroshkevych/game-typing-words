@@ -41,7 +41,7 @@ jobs:
          git remote add publish https://github.com/ddoroshkevych/ddoroshkevych.github.io.git
     - run: |
          echo "push"
-         git push publis HEAD:gh-pages --force
+         git push publish HEAD:gh-pages --force
     - run: |
          echo "cleanup"
          rm -r build
