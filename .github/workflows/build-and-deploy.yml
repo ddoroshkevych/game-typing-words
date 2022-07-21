@@ -40,6 +40,13 @@ jobs:
     - run: |
          echo "Config remote"
          git remote add publish https://github.com/ddoroshkevych/ddoroshkevych.github.io.git
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: gh-pages
+        repository: publish
+        force: true
     - run: |
          echo "push"
          git push publish HEAD:gh-pages --force
