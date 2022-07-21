@@ -45,7 +45,7 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: gh-pages
-        repository: publish
+        repository: ddoroshkevych/ddoroshkevych.github.io
         force: true
     - run: |
          echo "push"
