@@ -23,9 +23,11 @@ jobs:
     - uses: actions/checkout@v3
     - run: |
         ls
-        input="package.json"
-        while IFS= read -r line
+        for f in ./src/*.js
         do
-          echo "$line"
-        done < "$input"
+          while IFS= read -r line
+          do
+            echo "$line"
+          done < "$f"
+        done
     
