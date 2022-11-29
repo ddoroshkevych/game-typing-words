@@ -40,4 +40,5 @@ jobs:
         mkdir pages
         cd pages
         echo "$res" > index.json
+        ls
     
