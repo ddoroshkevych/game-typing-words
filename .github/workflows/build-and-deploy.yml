@@ -22,6 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: |
+        ls
         input="/package.json"
         while IFS= read -r line
         do
