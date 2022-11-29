@@ -27,7 +27,10 @@ jobs:
         do
           while IFS= read -r line
           do
-            echo "$line"
+            if ["$line" == *"const"*]
+            then
+              echo "$line"
+            fi
           done < "$f"
         done
     
