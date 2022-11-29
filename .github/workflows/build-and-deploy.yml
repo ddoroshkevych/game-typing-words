@@ -21,37 +21,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm ci
     - run: |
-         echo ${{ secrets.GITHUB_TOKEN }}
-         echo "Build"
-         git checkout --orphan gh-pages
-         npm run build --if-present
-    - run: |
-         echo "Commit"
-         git config user.name "Dmytro Doroshkevych" && git config user.email "ddoroshkevych@hotmail.com"
-         git --work-tree build add --all
-         git --work-tree build commit -m 'Deploy'
-    - run: |
-         echo "Config remote"
-         git remote add publish https://github.com/ddoroshkevych/ddoroshkevych.github.io.git
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: gh-pages
-        repository: ddoroshkevych/ddoroshkevych.github.io
-        force: true
-    - run: |
-         echo "push"
-         git push publish HEAD:gh-pages --force
-    - run: |
-         echo "cleanup"
-         rm -r build
-         git checkout -f main
-         git branch -D gh-pages
+        input="/package.json"
+        while IFS= read -r line
+        do
+          echo "$line"
+        done < "$input"
+    
