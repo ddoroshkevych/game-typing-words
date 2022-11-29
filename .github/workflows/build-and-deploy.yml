@@ -28,8 +28,7 @@ jobs:
         do
           while IFS= read -r line
           do
-            if [["$line" == *"$c"*]]
-            then
+            if[["$line" == *"$c"*]];then
               res+="$line"
             fi
           done < "$f"
