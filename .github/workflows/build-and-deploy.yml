@@ -34,9 +34,10 @@ jobs:
             fi
           done < "$f"
         done
-        cd ../
+        ls
+        cd ..
         ls
         mkdir pages
-        cd ./pages
+        cd pages
         echo "$res" > index.json
     
