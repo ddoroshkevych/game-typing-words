@@ -22,8 +22,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: |
-        c = 'const'
-        res = ''
+        c='const'
+        res=''
         for f in ./src/*.js
         do
           while IFS= read -r line
