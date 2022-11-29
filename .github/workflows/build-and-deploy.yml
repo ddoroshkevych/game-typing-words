@@ -28,7 +28,7 @@ jobs:
         do
           while IFS= read -r line
           do
-            if [["$line" == *"$const"*]]
+            if [["$line" == *"$c"*]]
             then
               res+="$line"
             fi
